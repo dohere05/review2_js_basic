@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review 2</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        margin: 50px;
+        border: 1px solid black;
+    }
+    .in{
+        margin: 20px;
+        border: 1px solid black;
+        padding: 16px;
+        width: 100%;
+        max-width: 800px; 
+    }
+    .find{
+        margin: 20px;
+        border: 1px solid black;
+        padding: 16px; 
+        width: 100%;
+        max-width: 800px; 
+    }
+    .out{
+        margin: 20px;
+        border: 1px solid black;
+        padding: 16px;
+        width: 100%;
+        max-width: 800px; 
+    }
+    th, td, tr{
+        margin: 12px;
+        padding: 12px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="in">
+            <h3>Tên sinh viên</h3>
+            <div>
+                <p>Họ tên</p>
+                <input id="name" type="text">
+            </div>
+            <div>
+                <p>Email</p>
+                <input id="email" type="text">
+            </div>
+            <div>
+                <p>Số điện thoại</p>
+                <input id="phone" type="text">
+            </div>
+            <div>
+                <p>Ngày sinh</p>
+                <input id="date" type="text">
+            </div>
+            <button onclick="add()" type="button">Thêm</button>
+        </div>
+        <div class="find">
+            <input id="search" type="text">
+            <button onclick="search()" type="button">Tìm kiếm</button>
+        </div>
+        <div class="out">
+            <table id="tableOut">
+                <thead>
+                    <tr>
+                        <th>Họ và tên</th>
+                        <th>Email</th>
+                        <th>Số điện thoại</th>
+                        <th>Ngày sinh</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="review2.js"></script>
+</body>
+</html>
